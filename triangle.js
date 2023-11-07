@@ -18,7 +18,7 @@ function verify() {
 
 function send() {
     if (check) {
-        document.getElementsById('result').value = result;
+        document.getElementsById("result").value = result;
         document.getElementById("UserEnter").submit();
     } else {
         alert("Ошибка")
