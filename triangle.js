@@ -8,9 +8,11 @@ function verify() {
     if (X * X + Y * Y === Z * Z || X * X + Z * Z === Y * Y || Y * Y + Z * Z === X * X) {
         result = "Треугольник существует и является прямоугольным"
         document.getElementById("result").innerText =  result;
+        check = true;
     } else {
         result = "Треугольник не существует или не является прямоугольным"
         document.getElementById("result").innerText =  result;
+        check = false;
     }
 }
 
