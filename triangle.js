@@ -16,9 +16,7 @@ function verify() {
 
 function send() {
     if (check) {
-        let textCondition = document.getElementsByTagName('p')[0].innerText
-        document.getElementsByid('formulation')[0].value = textCondition;
-        document.getElementsById('result')[0].value = result;
+        document.getElementsById('result').value = result;
         document.getElementById("UserEnter").submit();
     } else {
         alert("Ошибка")
