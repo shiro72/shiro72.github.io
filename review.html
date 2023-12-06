@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div><img src="http://d.zaix.ru/DA65.png" class="img-fluid" alt="Logo"></div>
+<div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="./index.html">О магазине</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./index.html/#address">Адреса</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./catalog.html">Каталог</a>
+        </li>
+        <li class="nav-item">
+            <a id="active" class="nav-link" href="./review">Отзывы</a>
+        </li>
+    </ul>
+</div>
+<div>
+    <div id="main">
+        <form action="https://www.google.ru/?hl=ru" method="get" target="_blank">
+            <p>Имя: <input type="Text" class="form-control" name="name" value="Гость"></p>
+            <p>Почта: <input type="Text" class="form-control" name="mail" value="guest@mail.com"></p>
+            <p>Дата: <input type="date" class="form-control" name="date" value='2023-12-06'></p>
+            <div>Оценка:<br>
+                <input type="radio" id="great" name="great" value="great" checked/>
+                <label for="great">Отлично</label>
+                <input type="radio" id="good" name="good" value="good"/>
+                <label for="good">Хорошо</label>
+                <input type="radio" id="fine" name="fine" value="fine"/>
+                <label for="fine">Нормально</label>
+                <input type="radio" id="bad" name="bad" value="bad"/>
+                <label for="bad">Плохо</label>
+                <input type="radio" id="awful" name="awful" value="awful"/>
+                <label for="awful">Ужасно</label>
+            </div>
+            <p>Отзыв:
+                <br>
+                <TEXTAREA class="form-control" cols=70 name="textarea" rows=4 placeholder="Отзыв"></TEXTAREA></p>
+            <p><input type="submit" class="btn btn-primary" name="submit" value="Отправить"></p>
+    </div>
+</div>
+<div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a id="bottom" class="nav-link" href="https://github.com/shiro72?tab=repositories"><img id="git"
+                                                                                                    src="http://d.zaix.ru/DA7i.png"></a>
+        </li>
+    </ul>
+</div>
+<style>
+    #active{
+        color: black;
+        font-weight: 750;
+    }
+    .nav-link{
+        color: black;
+    }
+    #main{
+        padding: 25px 10% 50px 10%
+    }
+    #header{
+        padding: 0px 10% 0px 10%;
+        text-align: center;
+        font-weight: 750;
+    }
+    #bottom{
+        color: black;
+        padding: 0px 10% 50px 10%;
+    }
+    #git{
+        width: 50px;
+    }
+    label{
+        padding: 2% 0px 2px 0%
+    }
+    .form-check-label{
+        padding: 2%
+    }
+    .form-check-input{
+        padding: 2%
+    }
+</style>
+</body>
+</html>
